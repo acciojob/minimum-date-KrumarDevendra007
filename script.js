@@ -1,7 +1,7 @@
 function minDate(dates) {
   //write you code here
-	return dates.reduce((min, curr) = {
-		return new Date(min) < new Date(curr) ? min :curr;
+	return dates.reduce((curr, min) = {
+		return new Date(curr) < new Date(min) ? min :curr;
 	});
 	
 }
